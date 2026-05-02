@@ -431,3 +431,49 @@ input:checked+.slider:before {
 
     opacity: 0.8;
 }
+
+/*  */
+/*  */
+/* frome here section 3 , skills section css starts  */
+/* /*  
+ /* */
+
+#sec3 {
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(168, 85, 247, 0.25),
+            transparent 35%),
+
+        radial-gradient(circle at bottom right,
+            rgba(99, 102, 241, 0.25),
+            transparent 35%),
+
+        linear-gradient(180deg,
+            #020617 0%,
+            #050816 40%,
+            #0b1120 100%);
+
+    overflow: hidden;
+    position: relative;
+}
+
+#sec3::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background: rgba(168, 85, 247, 0.15);
+
+    filter: blur(120px);
+
+    top: -100px;
+    left: -100px;
+
+    z-index: 0;
+}
