@@ -439,6 +439,8 @@ input:checked+.slider:before {
  /* */
 
 #sec3 {
+    display: flex;
+    justify-content: center;
     width: 100%;
     min-height: 100vh;
 
@@ -476,4 +478,133 @@ input:checked+.slider:before {
     left: -100px;
 
     z-index: 0;
+}
+
+.pagecontainer {
+    border: 1px solid red;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.pagecontainer h5 {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    margin-top: 15px;
+}
+
+.pagecontainer p {
+    /* font-family: "Bruno Ace SC", sans-serif; */
+    font-family: "Source Serif 4", serif;
+
+
+}
+
+.filter_box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+}
+
+.filter_box p {
+    width: 180px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    background: rgba(10, 15, 35, 0.35);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    color: white;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.25), inset 0 0 20px rgba(255, 255, 255, 0.03);
+    transition: all 0.3s ease;
+}
+
+
+
+.filter_box p:hover {
+    transform: translateY(-1px);
+    cursor: pointer;
+
+    border-color: #7a15c7;
+
+    box-shadow:
+        0 0 20px rgba(199, 125, 255, 0.5),
+        0 0 40px rgba(168, 85, 247, 0.25);
+}
+
+/* skill card , skill box css starts from here */
+.skill_box {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 25px;
+}
+
+.skill_box .card1 {
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.skill_box .card1 img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    padding: 6px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 2px solid rgba(168, 85, 247, 0.35);
+
+    box-shadow:
+        0 0 10px rgba(168, 85, 247, 0.25),
+        inset 0 0 10px rgba(168, 85, 247, 0.15);
+
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+}
+
+.skill_box .card1 img:hover {
+    cursor: pointer;
+    transform: translateY(-6px) scale(1.05);
+
+    border-color: #9b36e9;
+
+    box-shadow:
+        0 0 10px #c77dff,
+        0 0 20px rgba(199, 125, 255, 0.8),
+        0 0 40px rgba(168, 85, 247, 0.6),
+        inset 0 0 15px rgba(255, 255, 255, 0.1);
+
+    background: rgba(168, 85, 247, 0.08);
+}
+
+.skill_box .card1 h4 {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.skill_box .card1 p {
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
